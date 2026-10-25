@@ -1,0 +1,17 @@
+HEALTHCONNECT RWANDA WEEK 6 — DATA AND MODEL LIMITATIONS
+
+1. These are educational/synthetic datasets; outputs are not clinical advice.
+2. HighRiskScreeningProxy is a rule-generated screening label, not a validated
+   clinical outcome. Its model metrics must not be presented as clinical validity.
+3. No explicit hospital-admission outcome column was identified.
+4. No length-of-stay target or dedicated laboratory-results dataset was identified.
+5. Revenue regression predicts appointment-level billing amount when available;
+   it is not a validated forecast of future monthly facility revenue.
+6. Patient satisfaction labels are derived from feedback ratings; performance
+   may be weak and should be reported honestly.
+7. Billing anomaly flags indicate unusual amounts, not confirmed fraud or errors.
+8. Clusters are exploratory groupings, not medical diagnoses or quality rankings.
+9. Any model with low performance should be reported as a limitation, not hidden.
+10. Do not claim SHAP/LIME explanations unless those analyses have actually run.
+11. No reliable distance-to-facility calculation should be claimed without
+    usable patient/facility coordinates.

@@ -1,0 +1,8 @@
+Task,Method,Reported_accuracy_or_R2,Interpretation
+Insurance claim status,Logistic Regression,0.498,Confusion matrix: 351/705 correct. Weak predictive performance.
+Patient satisfaction,Logistic Regression,0.366,Confusion matrix: 129/352 correct. Weak predictive performance.
+High-risk screening proxy,Random Forest,0.885,"Rule-generated label, not clinical risk. Model predicted every test case as higher priority."
+Billing amount regression,Random Forest Regressor,0.940828,Reported R². Treat as preliminary because possible feature leakage has not been ruled out.
+Billing anomaly detection,Isolation Forest,,"150 of 5,000 records flagged (3%); unusual amounts are not confirmed fraud."
+Patient clustering,Unsupervised clustering,,Exploratory segmentation only; clusters are not diagnoses.
+Facility clustering,Unsupervised clustering,,Exploratory segmentation only; clusters are not facility quality rankings.
